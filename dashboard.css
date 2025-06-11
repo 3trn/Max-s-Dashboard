@@ -5,58 +5,56 @@
 }
 
 body {
-    background-color: #19232e;
+    background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* NAVIGATION BAR */
 
 .navbar {
     padding: 10pt;
-    color: #ecf0f1;
-    background-color: #34495e;
-    border-bottom: 5px solid #2c3e50;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-wrap: wrap;
     gap: 40pt; 
-    font-weight: 700;
-    font-size: 20pt;
+    font-size: 15pt;
+}
+
+.nameplatenavbar {
+    color: #2f37db;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
 }
 
 .navbar a { 
-    color: #ecf0f1;
+    color: #919191;
     text-decoration: none;
-    transition: color 0.3s ease, color 0.3s ease;
+    transition: color 0.8s ease;
 }
 
 .navbar a:hover,
 .navbar a:focus {
-    color: #2c3e50;
-}
-
-.nameplatenavbar {
-    display: flex;
-    justify-content: flex-start;
-    margin-right: auto;
+    color: #2f37db;
 }
 
 /* TO DO LIST BOX */
 .todolist {
     margin: 10pt;
     padding: 10pt;
-    background-color: #34495e;
-    color: #ecf0f1;
-    max-width: 300pt;
-    max-height: 300pt;
-    border: 5px solid #2c3e50;
+    background-color: white;
+    border: 1px solid #5e5e5e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 2em;
     flex-wrap: wrap;
 }
 #todolisttitle {
     font-size: 20pt;
-    text-align: center;
-    border-bottom: 5px solid #2c3e50;
+    color: #3f3f3f;
+    text-align: start;
+    padding-bottom: 10px;
 }
 
 ul {
@@ -65,5 +63,6 @@ ul {
 
 .todolistvariables {
     font-size: 15pt;
+    color: #4e4e4e;
 }
 
