@@ -1,7 +1,69 @@
 /* dashboard.css */
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
+body {
+    background-color: #19232e;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    font-weight: 700;
+}
+
+/* NAVIGATION BAR */
+
+.navbar {
+    padding: 10pt;
+    color: #ecf0f1;
+    background-color: #34495e;
+    border-bottom: 5px solid #2c3e50;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40pt; 
+    font-weight: 700;
+    font-size: 20pt;
+}
+
+.navbar a { 
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color: #2c3e50;
+}
+
+.nameplatenavbar {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
+/* TO DO LIST BOX */
+.todolist {
+    margin: 10pt;
+    padding: 10pt;
+    background-color: #34495e;
+    color: #ecf0f1;
+    max-width: 300pt;
+    max-height: 300pt;
+    border: 5px solid #2c3e50;
+    flex-wrap: wrap;
+}
+#todolisttitle {
+    font-size: 20pt;
+    text-align: center;
+    border-bottom: 5px solid #2c3e50;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.todolistvariables {
+    font-size: 15pt;
+}
+
