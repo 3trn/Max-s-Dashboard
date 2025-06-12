@@ -32,7 +32,7 @@ body {
 .navbar a { 
     color: #919191;
     text-decoration: none;
-    transition: color 0.8s ease;
+    transition: color 0.8s ease, opacity 0.5s ease;
 }
 
 .navbar a:hover,
@@ -40,6 +40,17 @@ body {
     color: #2f37db;
 }
 
+.navbar:has(a:hover) a:not(:hover) {
+  opacity: 50%;
+}
+
+/* MAIN CONTAIN AREA SETTINGS */
+.Main.Content.Area {
+    margin: 10pt;
+    padding: 10pt;
+    display: flex;
+    flex-wrap: wrap;
+}
 /* TO DO LIST BOX */
 .todolist {
     margin: 10pt;
@@ -49,6 +60,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     border-radius: 2em;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 #todolisttitle {
     font-size: 20pt;
@@ -66,3 +78,15 @@ ul {
     color: #4e4e4e;
 }
 
+/* TIME BLOCK CHART */
+
+.timeblockchart {
+    margin: 10pt;
+    padding: 10pt;
+    background-color: white;
+    border: 1px solid #5e5e5e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 2em;
+    flex-wrap: wrap;
+    width: 20em;
+}
